@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Gender Data Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="page-about">
+    <header class="top-header">
+      <div class="container top-header-inner">
+        <div class="brand">
+          <div class="brand-text">
+            <span class="brand-org">
+              <span class="brand-logo-badge" aria-hidden="true">
+                <img
+                  class="brand-inline-logo"
+                  src="./assets/brand-logo.png"
+                  alt=""
+                />
+              </span>
+              EqualDataTürkiye
+            </span>
+            <span class="brand-divider">|</span>
+            <span class="brand-title">Gender Data Portal</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <div class="container">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html" class="active">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="page-about-main">
+      <div class="container">
+        <div class="about-section-inner">
+          <header class="about-page-header">
+            <p class="hero-pretitle">EqualDataTürkiye</p>
+            <h1 class="about-page-title">About</h1>
+          </header>
+
+          <div class="about-intro">
+            <p>
+              This platform aims to highlight developments at both global and
+              national levels by addressing gender equality through a
+              data-driven approach. Indicators relating to key areas such as
+              education, health and political participation are compiled from
+              reliable data sources and presented in a simple, clear and
+              comparable format.
+            </p>
+            <p>
+              The objective is to transform complex datasets into accessible
+              visualisations, enabling users to analyse cross-country
+              differences and raise awareness of gender inequality. In this
+              regard, the platform aims to contribute to more informed
+              assessments through data-driven insights.
+            </p>
+          </div>
+
+          <div
+            class="about-cards"
+            role="group"
+            aria-label="Vision and mission"
+          >
+            <button
+              type="button"
+              class="about-card"
+              data-about="vision"
+              aria-expanded="false"
+              aria-controls="about-panel"
+            >
+              <h3>🎯 Vision</h3>
+            </button>
+            <button
+              type="button"
+              class="about-card"
+              data-about="mission"
+              aria-expanded="false"
+              aria-controls="about-panel"
+            >
+              <h3>🚀 Mission</h3>
+            </button>
+          </div>
+
+          <div
+            id="about-panel"
+            class="about-panel"
+            role="region"
+            aria-live="polite"
+            hidden
+          >
+            <p id="about-panel-vision" hidden>
+              To create a future where gender equality can be monitored through
+              data-driven, transparent analyses, and where balanced
+              representation is ensured in education, healthcare and
+              decision-making processes across all societies.
+            </p>
+            <p id="about-panel-mission" hidden>
+              To make gender inequality measurable by utilising reliable
+              national and international data sources; to raise awareness and
+              contribute to evidence-based decision-making processes by
+              presenting this data through clear, comparable and interactive
+              visualisations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gender Data Portal - Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="container top-header-inner">
+        <div class="brand">
+          <div class="brand-text">
+            <span class="brand-org">
+              <span class="brand-logo-badge" aria-hidden="true">
+                <img
+                  class="brand-inline-logo"
+                  src="./assets/brand-logo.png"
+                  alt=""
+                />
+              </span>
+              EqualDataTürkiye
+            </span>
+            <span class="brand-divider">|</span>
+            <span class="brand-title">Gender Data Portal</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <div class="container">
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="hero">
+      <div class="hero-lines" aria-hidden="true">
+        <span class="line l1"></span>
+        <span class="line l2"></span>
+        <span class="line l3"></span>
+        <span class="line l4"></span>
+        <span class="line l5"></span>
+        <span class="line l6"></span>
+      </div>
+
+      <div class="container hero-content">
+        <p class="hero-pretitle">EqualDataTürkiye</p>
+        <h2 class="hero-title">Shaping an Equal Future</h2>
+        <p class="hero-subtitle">
+          Data-driven insights into the 2025 Global Gender Gap: Education, Survival,
+          and Power.
+        </p>
+
+        <div class="hero-subactions" aria-label="Help and feedback">
+          <button class="hero-subaction" type="button" id="help-btn">
+            Help
+          </button>
+
+          <span class="hero-subaction-sep" aria-hidden="true">•</span>
+
+          <button class="hero-subaction" type="button" id="feedback-btn">
+            Feedback
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <section class="explore-section">
+      <div class="container">
+        <div class="explore-header">
+          <h2>Explore the Data</h2>
+        </div>
+
+        <div class="explore-grid">
+          <article class="explore-card explore-card--edu">
+            <div class="card-visual">
+              <img
+                class="edu-visual-logo"
+                src="./assets/edu-overlay-custom.png"
+                alt=""
+              />
+            </div>
+            <button
+              class="card-toggle"
+              type="button"
+              data-open-edu="true"
+            >
+              <span>Access to education</span>
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <p class="card-desc">
+              Discover Türkiye’s greatest achievement on its journey towards
+              equality. Click to see how this powerful picture in the classroom
+              has shaped social transformation and to uncover the real gains
+              behind the figures.
+            </p>
+          </article>
+
+          <article class="explore-card explore-card--health">
+            <div class="card-visual">
+              <img
+                class="health-visual-logo"
+                src="./assets/health-visual.png"
+                alt="Health and survival illustration"
+              />
+            </div>
+            <h3>Health and survival</h3>
+            <p>
+              Analyse Türkiye's position relative to global standards in terms
+              of women's life expectancy, access to healthcare and general
+              well-being indicators. Examine in depth the gender-specific
+              implications of data on life expectancy and quality of health.
+            </p>
+          </article>
+
+          <article class="explore-card explore-card--pol">
+            <div class="card-visual">
+              <img
+                class="pol-visual-logo"
+                src="./assets/pol-overlay.png"
+                alt=""
+              />
+            </div>
+            <h3>Political empowerment</h3>
+            <p>
+              Discover the gender gap in political representation and
+              decision-making mechanisms. Examine Türkiye's position in the
+              global index and the data on under-representation in government.
+            </p>
+          </article>
+        </div>
+
+        <div id="edu-detail-anchor" class="detail-anchor" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
